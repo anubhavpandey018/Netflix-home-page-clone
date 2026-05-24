@@ -1,0 +1,324 @@
+html,
+body {
+    width: 100%;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #5C8374;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    column-gap: 30px;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ================= BUTTONS ================= */
+
+.btns {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.one {
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    border: none;
+}
+
+.fab {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    border: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+
+    box-shadow:
+        0 4px 6px rgba(0, 0, 0, 0.1),
+        0 1px 3px rgba(0, 0, 0, 0.08);
+
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.fab:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 6px 12px rgba(0, 0, 0, 0.15);
+
+    background-color: #fafafa;
+}
+
+.fab:active {
+    transform: translateY(0);
+
+    box-shadow:
+        0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* ================= CARDS STACK ================= */
+
+.cards-wrapper {
+    position: relative;
+    width: 350px;
+    height: 420px;
+    margin-top: 20px;
+}
+
+/* ================= CARD ================= */
+
+.card {
+
+    position: absolute;
+    left: 0;
+
+    width: 350px;
+    height: 400px;
+
+    display: flex;
+    flex-direction: column;
+
+    border-radius: 18px;
+
+    background-color: #f5f5bb;
+
+    box-shadow:
+        -10px 0 15px -5px rgba(255, 0, 0, 0.6),
+        10px 0 15px -5px rgba(0, 0, 255, 0.6),
+        0 10px 20px -5px rgba(0, 255, 0, 0.6);
+
+    transition: all 0.3s ease;
+}
+
+/* ================= IMAGE ================= */
+
+img {
+
+    height: 60px;
+    width: 60px;
+
+    border-radius: 50%;
+
+    object-fit: cover;
+
+    margin: 25px 20px 0px 22px;
+}
+
+/* ================= NAME ================= */
+
+h2 {
+
+    margin-left: 22px;
+
+    font-size: 25px;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ================= DETAILS ================= */
+
+.two {
+
+    display: flex;
+    justify-content: space-between;
+
+    margin: 0px 22px;
+
+    font-size: 14px;
+    font-weight: 500;
+
+    opacity: 0.7;
+}
+
+/* ================= BUTTON GROUP ================= */
+
+.C_M {
+
+    display: flex;
+    column-gap: 10px;
+
+    margin-top: 12px;
+    margin-left: 22px;
+}
+
+/* ================= CALL BUTTON ================= */
+
+.call {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 70px;
+    height: 32px;
+
+    border-radius: 30px;
+
+    /* background-color: black; */
+    background-color: #183D3D;
+    color: white;
+
+    font-size: 14px;
+
+    cursor: pointer;
+}
+
+/* ================= MESSAGE BUTTON ================= */
+
+.msg {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 80px;
+    height: 32px;
+
+    border-radius: 30px;
+
+    background-color: rgba(112, 128, 144, 0.318);
+
+    font-size: 14px;
+
+    cursor: pointer;
+}
+
+/* ================= DELETE BUTTON ======================== */
+
+.delete {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 80px;
+    height: 32px;
+
+    border-radius: 30px;
+
+    background-color: #e74c3c;
+    color: white;
+
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/* ================= FORM ================= */
+
+.form-container {
+
+    display: none;
+    flex-direction: column;
+
+    width: 320px;
+
+    padding: 20px;
+
+    border-radius: 16px;
+
+    background-color: white;
+
+    box-shadow:
+        0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+form {
+
+    display: flex;
+    flex-direction: column;
+}
+
+/* ================= CATEGORY ================= */
+
+.category {
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.three {
+
+    display: flex;
+    align-items: center;
+}
+
+/* ================= LABELS ================= */
+
+label {
+
+    display: block;
+
+    margin: 5px;
+}
+
+/* ================= INPUTS ================= */
+
+input {
+
+    margin: 5px;
+
+    padding: 10px;
+
+    border-radius: 8px;
+
+    border: 1px solid #ccc;
+
+    outline: none;
+}
+
+input:focus {
+
+    border-color: #4b7bec;
+}
+
+/* ================= FORM BUTTONS ================= */
+
+button {
+
+    margin: 5px;
+    background-color: #1b8292;
+    border: none;
+}
+
+/* ================= CREATE NOTE BUTTON ================= */
+
+.submit-btn {
+
+    height: 40px;
+
+    border-radius: 10px;
+
+    background-color: black;
+    color: white;
+
+    cursor: pointer;
+}
+
+/* ================= CLOSE BUTTON ================= */
+
+.Close {
+
+    height: 40px;
+
+    border-radius: 10px;
+
+    background-color: rgba(112, 128, 144, 0.318);
+
+    cursor: pointer;
+}
